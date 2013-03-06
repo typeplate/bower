@@ -148,7 +148,7 @@ $stats-border-style: 0.125rem solid #ccc;
 // --------------------------------------------------------------------------
 // http://thesassway.com/projects/modular-scale
 
-@function modular-scale($scale, $base, $value) {
+@function t-modular-scale($scale, $base, $value) {
 	// divide a given font-size by base font-size & return a relative em value
 	@return ($scale/$base)#{$value};
 }
@@ -173,7 +173,7 @@ $stats-border-style: 0.125rem solid #ccc;
 // $Typographic scale
 @mixin modular-scale($scale, $base, $value, $measure:"") {
 	font-size: $scale#{px};
-	font-size: modular-scale($scale, $base, $value);
+	font-size: t-modular-scale($scale, $base, $value);
 	@if $measure != "" {
 		margin-bottom: measure-margin($scale, $measure, $value);
 	}
