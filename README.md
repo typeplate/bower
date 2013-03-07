@@ -41,9 +41,8 @@ Yup that&rsquo;s right! We&rsquo;re in the bower package registry. Simply run ``
 
 **Stylus**
 
-	@import "compass";
 	@import "[your_project_path]/reset";
-	@import "[root_project_path]/components/stylus/typeplate.styl";
+	@import "[root_project_path]/components/typeplate/stylus/typeplate.styl";
 
 **CSS**
 
