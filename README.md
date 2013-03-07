@@ -31,13 +31,13 @@ Yup that&rsquo;s right! We&rsquo;re in the bower package registry. Simply run ``
 
 	@import "compass";
 	@import "[your_project_path]/reset";
-	@import "[root_project_path]/components/scss/typeplate";
+	@import "[root_project_path]/components/typeplate/scss/typeplate";
 
 **LESS**
 
 	@import "compass";
 	@import "[your_project_path]/reset";
-	@import "[root_project_path]/components/less/typeplate.less";
+	@import "[root_project_path]/components/typeplate/less/typeplate.less";
 
 **Stylus**
 
