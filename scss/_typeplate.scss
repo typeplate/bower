@@ -79,15 +79,15 @@ $icon-fonts: null !default;
 // $Variable $Typescale
 // -------------------------------------//
 
-$tera: 117 !default; // 117 = 18 × 6.5
-$giga: 90 !default; // 90 = 18 × 5
-$mega: 72 !default; // 72 = 18 × 4
-$alpha: 60 !default; // 60 = 18 × 3.3333
-$beta: 48 !default; // 48 = 18 × 2.6667
-$gamma: 36 !default; // 36 = 18 × 2
-$delta: 24 !default; // 24 = 18 × 1.3333
-$epsilon: 21 !default; // 21 = 18 × 1.1667
-$zeta: 18 !default; // 18 = 18 × 1
+$size-tera: 117 !default; // 117 = 18 × 6.5
+$size-giga: 90 !default; // 90 = 18 × 5
+$size-mega: 72 !default; // 72 = 18 × 4
+$size-alpha: 60 !default; // 60 = 18 × 3.3333
+$size-beta: 48 !default; // 48 = 18 × 2.6667
+$size-gamma: 36 !default; // 36 = 18 × 2
+$size-delta: 24 !default; // 24 = 18 × 1.3333
+$size-epsilon: 21 !default; // 21 = 18 × 1.1667
+$size-zeta: 18 !default; // 18 = 18 × 1
 
 
 // $Variable $Typescale-Unit
@@ -575,7 +575,7 @@ small {
 // Multi-dimensional array, where:
 // the first value is the name of the class
 // and the second value is the variable for the size
-$sizes: tera $tera, giga $giga, mega $mega, alpha $alpha, beta $beta, gamma $gamma, delta $delta, epsilon $epsilon, zeta $zeta;
+$sizes: tera $size-tera, giga $size-giga, mega $size-mega, alpha $size-alpha, beta $size-beta, gamma $size-gamma, delta $size-delta, epsilon $size-epsilon, zeta $size-zeta;
 
 // Sass loop to associate h1-h6 tags with their appropriate greek
 // heading based on a modular scale.

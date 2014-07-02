@@ -62,15 +62,15 @@ $icon-fonts: null;
 // $TypeScale
 // -------------------------------------//
 
-$tera: 117; // 117 = 18 × 6.5
-$giga: 90; // 90 = 18 × 5
-$mega: 72; // 72 = 18 × 4
-$alpha: 60; // 60 = 18 × 3.3333
-$beta: 48; // 48 = 18 × 2.6667
-$gamma: 36; // 36 = 18 × 2
-$delta: 24; // 24 = 18 × 1.3333
-$epsilon: 21; // 21 = 18 × 1.1667
-$zeta: 18; // 18 = 18 × 1
+$size-tera: 117; // 117 = 18 × 6.5
+$size-giga: 90; // 90 = 18 × 5
+$size-mega: 72; // 72 = 18 × 4
+$size-alpha: 60; // 60 = 18 × 3.3333
+$size-beta: 48; // 48 = 18 × 2.6667
+$size-gamma: 36; // 36 = 18 × 2
+$size-delta: 24; // 24 = 18 × 1.3333
+$size-epsilon: 21; // 21 = 18 × 1.1667
+$size-zeta: 18; // 18 = 18 × 1
 
 
 // $TypeScale-Unit
@@ -84,7 +84,7 @@ $type-scale-unit-value: rem;
 
 $pull-quote-fontsize: 4em;
 $pull-quote-opacity: 0.5;
-$pull-quote-color: #dc976e;
+$pull-quote-color: gray;
 
 
 // $Citation
@@ -106,11 +106,11 @@ $small-caps-weight: 600;
 // -------------------------------------//
 
 $dropcap-float-position: left;
-$dropcap-font-size: 4em;
-$dropcap-font-family: inherit;
+$dropcap-font-size: 6em;
+$dropcap-font-family: Copperplate;
 $dropcap-txt-indent: 0;
-$dropcap-margin: inherit;
-$dropcap-padding: inherit;
+$dropcap-margin: 0;
+$dropcap-padding: 0.125em 0.125em 0 0;
 $dropcap-color: inherit;
-$dropcap-line-height: 1;
+$dropcap-line-height: 0.5;
 $dropcap-bg: transparent;
