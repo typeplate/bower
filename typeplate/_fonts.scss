@@ -1,0 +1,55 @@
+// .x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x //
+//
+// $Fontfaces
+//
+// .x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x //
+
+
+// $Fontface $Unicode-Range-Ampersand
+// -------------------------------------//
+
+@font-face {
+    font-family: '#{$amp-fontface-name}';
+    src: $amp-fontface-source;
+    unicode-range: U+0026;
+}
+
+// Ampersand fallback font for unicode range
+@font-face {
+    font-family: '#{$amp-fontface-name}';
+    src: $amp-fontface-fallback;
+    unicode-range: U+270C;
+}
+
+
+// $Fontface $Icon-Font-Helper
+// -------------------------------------//
+// ICON FONT HELPER
+// In order to use this hot rod you must have the following…
+// 1. Compass.
+// 2. Create a 'fonts' directory in the root of your project.
+// 3. Specify within your 'config.rb' file the following line…
+//
+// fonts_dir = "name-of-your-fonts-directory" ( i.e. fonts_dir = "fonts" )
+//
+// Example usage:
+// ex.1) $icon-fonts: (icon-name);
+// ex.2) $icon-fonts: (icon-name1, icon-name2, icon-name3);
+//
+// Additional Notes:
+// @include font-face() is a Compass helper function
+// based on this gist by Chris Van Patten
+// https://gist.github.com/4469518
+
+@if ($icon-fonts != null) {
+    @each $font in $icon-fonts {
+        @include font-face( $font,
+            font-files(
+                '#{$font}/#{$font}.woff',
+                '#{$font}/#{$font}.ttf',
+                '#{$font}/#{$font}.svg', svg
+            ),
+            '#{$font}/#{$font}.eot'
+            )
+    }
+}

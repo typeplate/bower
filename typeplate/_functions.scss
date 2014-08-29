@@ -1,0 +1,32 @@
+// .x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x //
+//
+// $Functions
+//
+// .x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x //
+
+
+// $Function $Context Calculator
+// -------------------------------------//
+// divide a given font-size by base font-size & return a relative value
+
+@function context-calc($scale, $base, $value) {
+    @return ($scale/$base)#{$value};
+}
+
+
+// $Function $Measure-Margin
+// -------------------------------------//
+// divide 1 unit of measure by given font-size & return a relative value
+
+@function measure-margin($scale, $measure, $value) {
+    $pixelValue: $measure/$scale;
+    $remValue: $pixelValue * $font-base;
+
+    @if $value == rem {
+        @return $pixelValue#{$value};
+    } @else if $value == em {
+        @return ($remValue/$scale)#{$value};
+    } @else {
+        @return $remValue#{$value};
+    }
+}
