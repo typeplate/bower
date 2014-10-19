@@ -202,7 +202,7 @@ $dropcap-bg: transparent !default;
 // divide a given font-size by base font-size & return a relative value
 
 @function context-calc($scale, $base, $value) {
-	@return ($scale/$base)#{$value};
+	@return ($scale/$base)+#{$value};
 }
 
 
@@ -215,11 +215,11 @@ $dropcap-bg: transparent !default;
 	$remValue: $pixelValue * $font-base;
 
 	@if $value == rem {
-		@return $pixelValue#{$value};
+		@return $pixelValue+#{$value};
 	} @else if $value == em {
-		@return ($remValue/$scale)#{$value};
+		@return ($remValue/$scale)+#{$value};
 	} @else {
-		@return $remValue#{$value};
+		@return $remValue+#{$value};
 	}
 }
 
@@ -236,12 +236,12 @@ $dropcap-bg: transparent !default;
 
 @mixin type-scale($scale, $base, $value, $measure:"") {
 	@if $value == rem {
-		font-size: $scale#{px};
+		font-size: $scale+#{px};
 		font-size: context-calc($scale, $base, $value);
 	} @else if $value == em {
 		font-size: context-calc($scale, $base, $value);
 	} @else {
-		font-size: $scale#{px};
+		font-size: $scale+#{px};
 	}
 
 	@if $measure != "" {
