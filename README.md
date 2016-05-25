@@ -17,6 +17,22 @@ Typeplate is just a measely **4.91 KB** and especially smaller when compressed!
 
 - Based on use cases for most developers' workflow, we recommend using Typeplate just after your reset stylesheet (i.e. [normalize](http://necolas.github.com/normalize.css)) and your compass ``@import`` in order to operate as we've intended, but as you'll see from our <a href="http://typeplate.com/demo">demo</a> it isn't necessary.
 
+### &sect; Installation via ``npm``
+
+1. ``npm i typeplate-starter-kit``
+2. Import from your project's primary ``.scss`` file like so:
+
+```scss
+// Imports
+// ====================================
+
+@import "[your_project_path]/resets"; // Not required. Example purposes only.
+@import 'node_modules/typeplate-starter-kit/dist/scss/_typeplate-index';
+
+
+// Custom Author Styles
+// ====================================
+```
 ### &sect; Installation via ``.scss @import``
 
 1. Download and unzip the [Sass ``.zip`` pkg](http://github.com/typeplate/starter-kit/blob/development/typeplate-sk.zip?raw=true).
