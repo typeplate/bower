@@ -9,15 +9,12 @@
 // - http://markgoodyear.com/2014/01/getting-started-with-gulp
 // =======================================================
 
-var gulp         = require('gulp'),
-    sass         = require('gulp-sass'),
-    livereload   = require('gulp-livereload'),
-    autoprefixer = require('gulp-autoprefixer'),
-    connect      = require('gulp-connect'),
-    zip          = require('gulp-zip'),
-    del          = require('del');
-
-$exec   = require('child_process').exec;
+var gulp         = require('gulp');
+var sass         = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
+var zip          = require('gulp-zip');
+var browserSync  = require('browser-sync').create();
+var del          = require('del');
 
 var paths_dir = {
   docs: 'docs',
@@ -56,7 +53,7 @@ gulp.task('sass', function() {
       cascade: false
     }))
     .pipe(gulp.dest(paths.sitecss))
-    .pipe(connect.reload());
+    .pipe(browserSync.reload);
 
   return stream;
 });
@@ -67,13 +64,11 @@ gulp.task('sass', function() {
 // ===================================================
 
 gulp.task('serve', function() {
-  connect.server({
-    root: [paths.site],
-    port: 9001,
-    livereload: true
+  browserSync.init({
+    server: {
+      baseDir: [paths.site]
+    }
   });
-
-  $exec('open http://localhost:9001');
 });
 
 
