@@ -6,7 +6,21 @@ Frameworks make decisions for you about how to organize, structure and design a 
 Typeplate is a "typographic starter kit". We don&rsquo;t make aesthetic design choices, but define proper markup with extensible styling for common typographic patterns. A stripped&ndash;down Sass library concerned with the appropriate technical implementation of design patterns&ndash;not how they look.
 
 ## &sect; Browser Tested, Developer Approved
-<img src="https://raw.github.com/paulirish/browser-logos/master/main-desktop.png" alt="" width="375">
+
+<table>
+    <tbody>
+        <tr>
+            <td height=320>
+                <a href="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png">
+                    <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" alt="Main desktop browsers">
+                </a>
+                <a href="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-mobile-browser-logos.png">
+                   <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-mobile-browser-logos.png" alt="Main mobile browsers">
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ## &sect; File Size
 Typeplate is just a measely **4.91 KB** and especially smaller when compressed!
