@@ -1,9 +1,10 @@
 <a href="//typeplate.com"><img src="http://typeplate.com/img/logo.png" alt="typeplate logo" width="216" height="216"></a>
 
 ## &sect; What is it?
-Frameworks make decisions for you about how to organize, structure and design a site. Pattern libraries don&rsquo;t separate styling and markup, making them tough to use in a truly modular fashion. We weren&rsquo;t satisfied, so we made a thing that doesn&rsquo;t do that.
+Frameworks decided about how to organize, structure and design a site. Pattern libraries don’t separate styling and markup which is hard to use in a truly modular fashion. We weren’t satisfied with the design, so we made the following changes.
 
-Typeplate is a "typographic starter kit". We don&rsquo;t make aesthetic design choices, but define proper markup with extensible styling for common typographic patterns. A stripped&ndash;down Sass library concerned with the appropriate technical implementation of design patterns&ndash;not how they look.
+Typeplate is a "typographic starter kit". We don’t make aesthetic design choices, instead defining proper markup with extensible styling for common typographic patterns is our goal. A stripped–down Sass library concerned with the appropriate technical implementation of design patterns and not the appearance of it.
+
 
 ## &sect; Browser Tested, Developer Approved
 <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" alt="" width="480">
